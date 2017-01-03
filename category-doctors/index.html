@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Choose a doctor- MyMediko</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="images/favicon.png">
+  </head>
+  <body>
+    <header class="header">
+      <div class="wrapper">
+        <div class="grid">
+          <h1>&#43;MyMediko&#43;</h1>
+        </div>
+        <div class="grid">
+          <ul>
+            <li><a href="../how-we-work/" class="header-links">How We Work</a></li>
+            <li><a href="#" class="header-links">Choose A Doctor</a>
+            <li><a href="../specialists/" class="header-links">Specialists</a></li>
+            <li><a href="../jobs/" class="header-links">Jobs</a></li>
+            <li class="login-menu"><a href="#" class="btn">Log In</a>
+              <ul class="login-opener">
+                <li><a href="../patient-login/">As A Patient</a></li>
+                <li><a href="../doctor-login/">As A Doctor</a></li>
+              </ul>
+            </li>
+            <li><a href="../signup/" class="btn">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <header class="header-front-face">
+      <div class="grid">
+        <h1>&#43;MyMediko&#43;</h1>
+      </div>
+      <div class="account">
+        <li class="login-menu"><a href="#" class=""><img src="images/account.png" class="acc-icon"></a>
+          <ul class="login-opener">
+            <li><a href="../patient-login/">As A Patient</a></li>
+            <li><a href="../doctor-login/">As A Doctor</a></li>
+          </ul>
+        </li>
+      </div>
+      <div id="barsWrapper">
+        <div id="barsContainer">
+          <div id="bc-first" class="animate"></div>
+            <div id="bc-second" class="animate"></div>
+          <div id="bc-third" class="animate"></div>
+        </div>
+      </div>
+      <aside id="mainAside" class="animate aside-bar">
+        <ul id="menu-list">
+          <li><a href="../how-we-work/">How We Work</a></li>
+          <li><a href="#">Choose A Doctor's</a></li>
+          <li><a href="../specialists/">Specialists</a></li>
+          <li><a href="../jobs/">Jobs</a></li>
+          <li><a href="../signup/">Sign Up</a></li>
+        </ul>
+      </aside>
+    </header>
+    <!--script of aside menu-->
+    <script>
+      var aside = document.getElementById('mainAside');
+      var asideOn = false
+      
+      document.getElementById('barsWrapper').addEventListener('click', function(){
+          if(asideOn){
+            aside.style.right = '-100%';
+            
+            asideOn = false;
+          }else{
+            aside.style.right = '0';
+            
+            asideOn = true;
+          }
+      });
+    </script>
+  <!--end of aside menu script-->
+    
+  <!--script for menu button-->
+    <script>
+      
+      function _(e){
+        return document.getElementById(e);
+      }
+      
+      var FirstBar = _('bc-first');
+      var SecondBar = _('bc-second');
+      var ThirdBar = _('bc-third');
+      var btn = _('barsWrapper');
+      var menuOn = false;
+
+      btn.addEventListener('click',function(){
+        
+        if(menuOn){
+          FirstBar.style.transform = 'rotate(0deg)';
+          FirstBar.style.top = '0px';
+          SecondBar.style.opacity= 1;
+          ThirdBar.style.transform = 'rotate(0deg)';
+          ThirdBar.style.bottom = '0px';
+          
+          menuOn = false;
+        }else{
+          FirstBar.style.transform = 'rotate(45deg)';
+          FirstBar.style.top = '8px';
+          SecondBar.style.opacity= 0;
+          ThirdBar.style.transform = 'rotate(-45deg)';
+          ThirdBar.style.bottom = '8px';
+          
+          menuOn = true;
+        }
+      });
+    </script>
+  <!--end of menu button script-->
+    <section class="doctors">
+      <div class="doctors-list">
+        <div class="list">
+          <img src="images/doctor-icon.png" class="doctors-pic">
+          <h1>Dr. doctor's name </h1>
+          <h2>Profile ex:- Where they work like (Ex-Dean , Ex-Head & Ex- professor of Ophthalmology, P.G.I.M.E.R, Chandigarh)</h2>
+          <h3>Qualification shows here</h3>
+          <h4>speciality</h4>
+          <h5>Experience</h5>
+          <h6>Medals/awards they achieve</h6>
+          <div class="list-btn">
+            Council Wage: <span>&#x20B9;</span>500
+          </div>
+          <a href="#" class="list-btn-sec">
+            Delibrate Now
+          </a>
+        </div>
+        <div class="list">
+          <img src="images/doctor-icon.png" class="doctors-pic">
+          <h1>Dr. doctor's name </h1>
+          <h2>Profile ex:- Where they work like (Ex-Dean , Ex-Head & Ex- professor of Ophthalmology, P.G.I.M.E.R, Chandigarh)</h2>
+          <h3>Qualification shows here</h3>
+          <h4>speciality</h4>
+          <h5>Experience</h5>
+          <h6>Medals/awards they achieve</h6>
+          <div class="list-btn">
+            Council Wage: <span>&#x20B9;</span>500
+          </div>
+          <a href="#" class="list-btn-sec">
+            Delibrate Now
+          </a>
+        </div>
+        <div class="list">
+          <img src="images/doctor-icon.png" class="doctors-pic">
+          <h1>Dr. doctor's name </h1>
+          <h2>Profile ex:- Where they work like (Ex-Dean , Ex-Head & Ex- professor of Ophthalmology, P.G.I.M.E.R, Chandigarh)</h2>
+          <h3>Qualification shows here</h3>
+          <h4>speciality</h4>
+          <h5>Experience</h5>
+          <h6>Medals/awards they achieve</h6>
+          <div class="list-btn">
+            Council Wage: <span>&#x20B9;</span>500
+          </div>
+          <a href="#" class="list-btn-sec">
+            Delibrate Now
+          </a>
+        </div>
+        <div class="list">
+          <img src="images/doctor-icon.png" class="doctors-pic">
+          <h1>Dr. doctor's name </h1>
+          <h2>Profile ex:- Where they work like (Ex-Dean , Ex-Head & Ex- professor of Ophthalmology, P.G.I.M.E.R, Chandigarh)</h2>
+          <h3>Qualification shows here</h3>
+          <h4>speciality</h4>
+          <h5>Experience</h5>
+          <h6>Medals/awards they achieve</h6>
+          <div class="list-btn">
+            Council Wage: <span>&#x20B9;</span>500
+          </div>
+          <a href="#" class="list-btn-sec">
+            Delibrate Now
+          </a>
+        </div>
+        <div class="list">
+          <img src="images/doctor-icon.png" class="doctors-pic">
+          <h1>Dr. doctor's name </h1>
+          <h2>Profile ex:- Where they work like (Ex-Dean , Ex-Head & Ex- professor of Ophthalmology, P.G.I.M.E.R, Chandigarh)</h2>
+          <h3>Qualification shows here</h3>
+          <h4>speciality</h4>
+          <h5>Experience</h5>
+          <h6>Medals/awards they achieve</h6>
+          <div class="list-btn">
+            Council Wage: <span>&#x20B9;</span>500
+          </div>
+          <a href="#" class="list-btn-sec">
+            Delibrate Now
+          </a>
+        </div>
+        <div class="list">
+          <img src="images/doctor-icon.png" class="doctors-pic">
+          <h1>Dr. doctor's name </h1>
+          <h2>Profile ex:- Where they work like (Ex-Dean , Ex-Head & Ex- professor of Ophthalmology, P.G.I.M.E.R, Chandigarh)</h2>
+          <h3>Qualification shows here</h3>
+          <h4>speciality</h4>
+          <h5>Experience</h5>
+          <h6>Medals/awards they achieve</h6>
+          <div class="list-btn">
+            Council Wage: <span>&#x20B9;</span>500
+          </div>
+          <a href="#" class="list-btn-sec">
+            Delibrate Now
+          </a>
+        </div>
+        <div class="list">
+          <img src="images/doctor-icon.png" class="doctors-pic">
+          <h1>Dr. doctor's name </h1>
+          <h2>Profile ex:- Where they work like (Ex-Dean , Ex-Head & Ex- professor of Ophthalmology, P.G.I.M.E.R, Chandigarh)</h2>
+          <h3>Qualification shows here</h3>
+          <h4>speciality</h4>
+          <h5>Experience</h5>
+          <h6>Medals/awards they achieve</h6>
+          <div class="list-btn">
+            Council Wage: <span>&#x20B9;</span>500
+          </div>
+          <a href="#" class="list-btn-sec">
+            Delibrate Now
+          </a>
+        </div>
+        <div class="list">
+          <img src="images/doctor-icon.png" class="doctors-pic">
+          <h1>Dr. doctor's name </h1>
+          <h2>Profile ex:- Where they work like (Ex-Dean , Ex-Head & Ex- professor of Ophthalmology, P.G.I.M.E.R, Chandigarh)</h2>
+          <h3>Qualification shows here</h3>
+          <h4>speciality</h4>
+          <h5>Experience</h5>
+          <h6>Medals/awards they achieve</h6>
+          <div class="list-btn">
+            Council Wage: <span>&#x20B9;</span>500
+          </div>
+          <a href="#" class="list-btn-sec">
+            Delibrate Now
+          </a>
+        </div>
+      </div>
+    </section>    
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="box">
+          <h3>Learn More</h3>
+          <ul>
+            <li><a href="#">Our Team</a></li>
+            <li><a href="#">Medical Advisory Board</a></li>
+            <li><a href="#">Find Doctors</a></li>
+            <li><a href="#">Find Doctors By Speciality</a></li>
+            <li><a href="#">Consultation Fee</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>Company</h3>
+          <ul>
+            <li><a href="#">How It Works</a></li>
+            <li><a href="#">Experts - Second Opinion</a></li>
+            <li><a href="#">Experts - General Health</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">FAQ's</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="box">
+          <h3>Policies</h3>
+          <ul>
+            <li><a href="#">Terms & conditions</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">PAyment & Refund Policy</a></li>
+            <li><a href="#">Informed Consent</a></li>
+            <li><a href="#">Disclaimer</a></li>
+          </ul>
+        </div>
+      </div>
+      <p>
+        &copy; 2017 MyMediko. All Rights Reserved
+      </p>
+    </footer>
+  </body>
+</html>
